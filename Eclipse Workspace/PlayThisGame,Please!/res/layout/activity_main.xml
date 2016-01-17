@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.weird.playthisgameplease.MainActivity"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:id="@+id/layoutName"
+    	android:orientation="horizontal"
+    	android:layout_height="wrap_content"
+    	android:layout_width="match_parent"
+    	android:weightSum="1" >
+        
+        <EditText 
+            android:hint="@string/hintNameEnter"
+            android:layout_height="wrap_content"
+    		android:layout_width="0dp"
+    		android:layout_weight="0.80"
+    		android:id="@+id/editName" />
+        
+        <Button 
+            android:layout_weight="0.20"
+            android:text="@string/ok"
+            android:layout_height="wrap_content"
+    		android:layout_width="0dp"
+    		android:textAllCaps="true"
+    		android:id="@+id/buttonName" />
+        
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textGreeting"
+        android:textSize="30sp" />
+
+    <EditText 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:hint="@string/enterNumberHint" />
+    
+    <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    style="?android:attr/buttonBarStyle" >
+        
+        <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/buttonSubmit"
+        android:id="@+id/buttonSubmit"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarButtonStyle" />
+        
+         <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/buttonSettings"
+        android:id="@+id/buttonSettings"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarButtonStyle" />
+         
+          <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/buttonSend"
+        android:id="@+id/buttonSend"
+        android:layout_weight="1"
+        style="?android:attr/buttonBarButtonStyle" />
+        
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textNumber" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTries" />
+    
+</LinearLayout>

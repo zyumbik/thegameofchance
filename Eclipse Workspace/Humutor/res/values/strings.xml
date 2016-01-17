@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Humutor</string>
+    <string name="action_settings">Settings</string>
+    <string name="editNameHint">Enter your name</string>
+    <string name="imgDescriptionRu">I\'m Russian</string>
+    <string name="imgDescriptionUs">I\'m not Russian</string>
+    <string name="title_activity_game">You do play</string>
+    <string name="title_activity_win">Congratulations!</string>
+    <string name="tries">Tries:</string>
+    <string name="android">Android:</string>
+    <!-- Win -->
+    <string name="congrats1">, you\'re lucky today!</string>
+    <string name="congrats2">, nice result!</string>
+    <string name="congrats3">, good game!</string>
+    <string name="congrats4">, how did you do that?</string>
+    <string name="congrats5">, you won! Unbelieveable!</string>
+    <!-- Fail -->
+    <string name="fail1">At least you\'re still alive!</string>
+    <string name="fail2">Giving up already?</string>
+    <string name="fail3">Have you seen a black cat crossing the road today?</string>
+    <string name="fail4">It is so funny to watch you solving this problem!</string>
+    <string name="fail5">Stop kidding me, please!</string>
+    <string name="smile1">:-S</string>
+    <string name="smile2">$_$</string>
+    <string name="smile3">*_*</string>
+    <string name="smile4">:-O</string>
+    <string name="smile5">:-|</string>
+    <!-- Buttons -->
+    <string name="improveScore">Improve</string>
+    <string name="settings">Settings¿</string>
+    <string name="title_activity_fail">Ooops...</string>
+    
+
+</resources>

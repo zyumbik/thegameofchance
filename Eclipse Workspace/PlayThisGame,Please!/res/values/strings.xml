@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlayThisGame, Please!</string>
+    <string name="action_settings">Settings</string>
+    <string name="enterNumberHint">Enter the number</string>
+    <string name="buttonSubmit">Submit</string>
+    <string name="buttonSettings">Settings</string>
+    <string name="buttonSend">Send</string>
+    <string name="hintNameEnter">Enter your name</string>
+    <string name="ok">OK</string>
+
+</resources>

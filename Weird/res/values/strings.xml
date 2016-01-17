@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weird</string>
+    <string name="action_settings">Settings</string>
+    <string name="enterName">Enter your name</string>
+    <string name="hintName">in this text field</string>
+    <string name="imgdescriptor">Hello there!</string>
+    <string name="rBtnText1">Check me, please! I\'m important!</string>
+    <string name="rBtnText2">No, check me, I\'m more important!</string>
+    <string name="btnText1">Not very fancy button</string>
+    
+</resources>

@@ -1,0 +1,67 @@
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Random rnd = new Random();
+		
+		int number = rnd.nextInt(9) + 1;
+		String example = exampleGeneration(number);
+		
+		System.out.println(example);
+		
+	}
+
+	private static String exampleGeneration(int a) {
+		StringBuilder sb = new StringBuilder(50);
+		Random rnd = new Random();
+		char op = '$';
+		int x;
+		double y = 0;
+		
+		do {
+			int choice = rnd.nextInt(7);
+			x = rnd.nextInt(100);
+			switch (choice) {
+			case 0:
+				y = a + x;
+				op = '-';
+				break;
+			case 1:
+				y = a - x;
+				op = '+';
+				break;
+			case 2:
+				y = a * x;
+				op = '/';
+				break;
+			case 3:
+				x = rnd.nextInt(99) + 1;
+				y = a / x;
+				op = '*';
+				break;
+			case 4:
+				y = Math.pow(a, 2);
+				op = '√';
+				break;
+			case 5:
+				if (Math.sqrt(a) % 1 == 0) {
+					y = Math.sqrt(a);
+					op = '^';
+					x = 2;
+				}
+				break;
+			case 6:
+				if (x == 33) {
+					return "33";
+				}
+			}
+		} while ((int) y == y);
+		
+		int y2 = (int) y;
+		sb.append(y2 + "" + op + "" + x + "=" + a);
+		
+		return sb.toString();
+	}
+
+}
