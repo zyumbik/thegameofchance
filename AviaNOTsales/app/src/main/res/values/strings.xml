@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AviaNOTsales</string>
+    <string name="greeting">Wel.com. Here you\'ll be able to not to buy not tickets for not planes. There is no pizza here too.</string>
+    <string name="hintName">Don\'t enter your name</string>
+    <string name="hintCost">How much money will you pay?</string>
+    <string name="hintClass">Don\'t enter not class</string>
+    <string name="buttonGet">Give me dat not ticket</string>
+</resources>
