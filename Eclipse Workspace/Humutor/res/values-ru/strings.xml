@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="editNameHint">Введите имя</string>
+    <string name="imgDescriptionRu">Ярусский</string>
+    <string name="imgDescriptionUs">Янерусский</string>
+    <string name="title_activity_game">Угадай?</string>
+    <string name="title_activity_win">Поздравляем!</string>
+    <string name="tries">Попыток:</string>
+    <!-- Win -->
+    <string name="congrats1">, бывает, что все удается. Не пугайся, это пройдет!</string>
+    <string name="congrats2">, как ты это сделал?</string>
+    <string name="congrats3">, невероятное везение!</string>
+    <string name="congrats4">, твой гороскоп не ошибался!</string>
+    <string name="congrats5">, используешь магию вне Хогвартса?</string>
+    <!-- Fail -->
+    <string name="fail1">Ну, хотя-бы жив остался!</string>
+    <string name="fail2">Повезет в любви!</string>
+    <string name="fail3">Я так просто не сдамся!</string>
+    <string name="fail4">Сколько же нужно обаяния, чтобы завоевать расположение звезд!</string>
+    <string name="fail5">И это все, на что ты способен?</string>
+    <!-- Buttons -->
+    <string name="improveScore">Могу лучше</string>
+    <string name="settings">Настройки¿</string>
+    <string name="title_activity_fail">Упс! Ошыбочка...</string>
+    
+</resources>

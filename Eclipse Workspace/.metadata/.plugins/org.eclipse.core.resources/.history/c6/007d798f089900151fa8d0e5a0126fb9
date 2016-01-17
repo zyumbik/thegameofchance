@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal" >
+    
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+       
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="fill_parent"
+		    	android:orientation="horizontal"
+		    	android:weightSum="2">
+	        
+	            <RelativeLayout 
+				    android:id="@+id/layLeft"
+				    android:layout_width="300dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1">
+				    
+				 	<ImageView 
+				        android:id="@+id/bgLeft"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:src="@drawable/monster_main_left_en"
+				        android:scaleType="centerCrop"
+				        android:layout_alignParentEnd="true" />
+				 	
+				    <LinearLayout 
+				        android:layout_width="wrap_content"
+				    	android:layout_height="fill_parent"
+					    android:weightSum="1"
+					    android:orientation="vertical"
+					    android:gravity="center_horizontal">
+					    
+					    <EditText 
+					        android:id="@+id/editName"
+					        android:layout_marginTop="50dp"
+					        android:paddingLeft="20dp"
+					        android:paddingRight="20dp"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textAlignment="center"
+					        android:hint="@string/editNameHint"
+					        android:textSize="13pt"
+					        android:maxLength="18" />
+					    
+					    <Button 
+					        android:text=""
+					        android:layout_width="50dp"
+					        android:layout_height="fill_parent"
+					        android:background="@null" />
+					    
+					</LinearLayout>
+				</RelativeLayout>
+				
+				<RelativeLayout 
+				    android:id="@+id/layRight"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1">
+				    
+				    <ImageView 
+				        android:id="@+id/bgRight"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:src="@drawable/monster_main_right"
+				        android:scaleType="fitStart" />
+				    
+				    <LinearLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				    
+				        <Button
+				    	    android:layout_width="50dp"
+				    	    android:layout_height="fill_parent"
+				    	    android:text="@null" />
+				    
+				    </LinearLayout>
+				</RelativeLayout>
+				
+			</LinearLayout>
+	</HorizontalScrollView>
+</RelativeLayout>

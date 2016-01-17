@@ -1,0 +1,68 @@
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Random rnd = new Random();
+		
+		int number = rnd.nextInt(9) + 1;
+		String example = expressionGeneration(number);
+		
+		System.out.println(example);
+		
+	}
+
+	private static String expressionGeneration(int a) {
+		StringBuilder sb = new StringBuilder(50);
+		Random rnd = new Random();
+		char op = '$'; // to make it initialized and recognize mistakes
+		int x;
+		double y = 0.5;
+		
+		do {
+			int choice = rnd.nextInt(7);
+			x = rnd.nextInt(100);
+			switch (choice) {
+			case 0:
+				y = a + x;
+				op = '-';
+				break;
+			case 1:
+				y = a - x;
+				op = '+';
+				break;
+			case 2:
+				y = a * x;
+				op = '/';
+				break;
+			case 3:
+				x = rnd.nextInt(10) + 1;
+				y = (double) a / x;
+				op = '*';
+				break;
+			case 4:
+				y = Math.pow(a, 2); // will be changed later to display the result right
+				op = '√';
+				break;
+			case 5:
+				if (Math.sqrt(a) % 1 == 0) {
+					y = Math.sqrt(a);
+					op = '^';
+					x = 2;
+				}
+				break;
+			case 6:			//it's a joke	
+				if (x == 33) {
+					return "33";
+				}
+				y = 0.5;	//to regenrate if (x != 33)
+				break;
+			}
+		} while ((int) y != y);	//to check if y is integer and if no - regenerate
+		
+		sb.append((int) y + "" + op + "" + x + "=" + a);
+		
+		return sb.toString();
+	}
+
+}
